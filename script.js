@@ -219,7 +219,7 @@ function VoiceScientificCalculator() {
     const handleReciprocal = () => {
         try {
             const result = 1 / parseFloat(display);
-            addToHistory(1/${display} = ${result});
+            addToHistory(`1/${display} = ${result}`);
             setDisplay(String(result));
         } catch { setDisplay('Error'); }
     };
